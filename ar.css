@@ -1,0 +1,72 @@
+body{
+	direction: rtl;
+	text-align: right!important;
+	 font-family: 'Tajawal', sans-serif!important; 
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Tajawal', sans-serif!important; 
+}
+
+/*header*/
+.m_header .navbar-collapse li.lang_nav a{ font-family: 'Gotham', sans-serif!important; }
+
+
+
+/*video popups*/
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close{  
+	left: 30px;
+	right: auto!important;
+    text-align: left;
+    background-position: left;
+}
+
+
+/*about*/
+.about_sec #about_close{
+	left: 53px;
+	right: auto;
+}
+
+.about_sec::before{
+	left: -12vw;
+	right: auto;
+    background-position: top left;
+}
+
+/*welcome sec*/
+.welcome_sec .right_content img{     
+	left: -21vw;
+    right: auto; 
+}
+
+.welcome_sec .float_item img{
+	left: auto;
+    right: -21vh;
+    transform: scaleX(-1);
+}
+
+.welcome_sec .mid_content a.loading::after{
+    content: 'التحميل، يرجى الانتظار'!important;
+}
+
+
+@media(max-width: 991px){
+	.about_sec{
+		top: 44.5px;
+	}
+}
+
+@media (max-width: 860px){
+	/*about*/
+	.about_sec{ background-position-x: -24vw; }
+
+	/*welcome*/
+	.welcome_sec .right_content img{ left: -25vw; }
+}
+
+
+@media (max-width: 680px){
+	/*about*/
+	.about_sec{ background-position-x: -35vw; }
+}
